@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #0a0630;
+}
+
+a {
+    text-decoration: none;
+    color: #0a0630;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-large {
+    background: #0a0630;
+    color: #fff;
+    padding: 1rem;
+}
+
+.btn-trial {
+    background: #0a0630;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.btn-login {
+    background: #e6e6e6;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+}
+
+/* header  */
+#main-header .container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+}
+
+#main-header .logo h2 {
+    color: #d2d0d0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+#main-header ul {
+    display: flex;
+}
+
+#main-header a {
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* showcase */
+#showcase-content {
+    background: #fdf6ec;
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    height: 70vh;
+}
+
+#showcase-content .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 68vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#showcase-content .about h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+#showcase-content .about h3 {
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+/* design content */
+.thoughts-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.bar {
+    background: #e6e6e6;
+    height: 1.5px;
+    width: 220px;
+}
+
+.thoughts-title p {
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cards p {
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+
+.date {
+    font-size: 0.75rem;
+}
+
+@media(max-width:750px) {
+    #main-header .container {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    #main-header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #main-header li {
+        margin: 0.8rem 0;
+    }
+
+    #showcase-content .about {
+        width: 60%;
+    }
+
+    #showcase-content .about h1 {
+        font-size: 2.18rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    #showcase-content .about h3 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .thoughts-title p {
+        font-size: 0.9rem;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .cards {
+        display: block;
+        margin: 0 2rem;
+    }
+}
